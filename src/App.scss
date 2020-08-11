@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: #f7f7f7;
+    height: 100%;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    font-family: 'Baloo Da 2', cursive;
+
+    &__header {
+        position: sticky;
+        top: 0;
+        background-color: #ffffff;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        z-index: 1;
+    }
+
+    &__header-image {
+        max-width: 120px;
+        max-height: 60px;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__modal {
+        display: flex;
+        flex-direction: column;
+        outline: none;
+    }
+
+    &__modal-image {
+        max-height: 40px;
+        max-width: 80px;
+        margin: 0 auto;
+    }
+
+    &__body {
+        display: grid;
+        justify-content: center;
+    }
+
+    &__header-login {
+        display: flex;
+        align-items: center;
+    }
+
+    &__header-login-wrapper {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    &__user-name {
+        height: 100%;
+        padding-bottom: 4px;
+        margin: 0 10px;
+    }
+
+    &__body-upload-unauth {
+        text-align: center;
+    }
+}
+
+.post {
+    max-width: 600px;
+    margin: 40px 0;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding-bottom: 20px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    &__user-name {
+        letter-spacing: 2px;
+    }
+
+    &__avatar {
+        margin-right: 10px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 600px;
+        max-height: 600px;
+    }
+
+    &__text {
+        font-weight: normal;
+        padding: 20px;
+    }
+
+    &__form-add-comment {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    &__input-comment {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    &__btn-add-comment {
+        flex: 0;
+    }
+}
+
+.comments {
+    &__text {
+        padding: 3px 20px;
+        font-size: 14px;
+    }
+}
+
+input,
+button {
+    font-family: 'Baloo Da 2', cursive !important;
+}
+
